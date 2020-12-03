@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="pharmacy_management"/>
+  <table-filter match-name="screens"/>
+  <table-filter match-name="purchases_bills"/>
+  <table-filter match-name="lost_drugs"/>
+  <table-filter match-name="admin"/>
+  <table-filter match-name="bill_code_store"/>
+  <table-filter match-name="customer"/>
+  <table-filter match-name="sales_bills"/>
+  <table-filter match-name="drugs"/>
+  <table-filter match-name="delivery_bills"/>
+</hibernate-reverse-engineering>

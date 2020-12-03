@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/pharmacy_management?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+   <property name="hibernate.current_session_context_class">thread</property>
+    
+    <mapping class="com.store.dal.entities.Admin"/>
+    <mapping class="com.store.dal.entities.Screens"/>
+    <mapping class="com.store.dal.entities.PurchasesBills"/>
+    <mapping class="com.store.dal.entities.SalesBills"/>
+    <mapping class="com.store.dal.entities.LostDrugs"/>
+    <mapping class="com.store.dal.entities.DeliveryBills"/>
+    <mapping class="com.store.dal.entities.Drugs"/>
+    <mapping class="com.store.dal.entities.Customer"/>
+    <mapping class="com.store.dal.entities.BillCodeStore"/>
+  </session-factory>
+</hibernate-configuration>

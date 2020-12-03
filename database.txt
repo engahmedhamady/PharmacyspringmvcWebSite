@@ -1,0 +1,167 @@
+create database pharmacy_management;
+----------------------------------------------------------
+CREATE TABLE admin(  
+    `Name` varchar(100) ,  
+   `Password`	varchar(100),  
+  
+    PRIMARY KEY (Name)   
+);  
+
+INSERT INTO `admin`(`Name`, `Password`) VALUES ('admin','admin');
+-------------------------------------------------------------
+CREATE TABLE bill_code_store(  
+    `code` int(11) , 
+    PRIMARY KEY (code)   
+); 
+INSERT INTO `bill_code_store`(`code`) VALUES (1);
+--------------------------------------------------------------------
+CREATE TABLE customer(  
+   `ID`	int(13) ,  
+   `name`	varchar(100),  
+     `phone`	varchar(100),  
+     `email`	varchar(100),  
+  
+    PRIMARY KEY (ID)   
+);  
+-------------------------------------------------------------------
+CREATE TABLE delivery_bills(  
+  `Bill_Code` int(11),
+    `Bill_Date`date,
+    `Drug1` varchar(100),
+    `unit_price1` int(11),
+    `Quantity1` int(11),
+    `total1` int(11), 
+    `discount1` int(11),
+    `net1` int(11), 
+    `profit1` int(11),
+    `Drug2` varchar(100),
+    `unit_price2` int(11),
+    `Quantity2` int(11), 
+    `total2`  int(11),
+    `discount2` int(11),
+    `net2` int(11), 
+    `profit2`int(11),
+    `Drug3`varchar(100), 
+    `unit_price3`int(11),
+    `Quantity3`int(11), 
+    `total3`int(11), 
+    `discount3`int(11),
+    `net3`int(11), 
+    `profit3`int(11), 
+    `Drug4` varchar(100),
+    `unit_price4`int(11),
+    `Quantity4`int(11),
+    `total4` int(11),
+    `discount4` int(11), 
+    `net4` int(11),
+    `profit4` int(11),
+    `Drug5` varchar(100),
+    `unit_price5`int(11), 
+    `Quantity5` int(11), 
+    `total5` int(11),
+    `discount5` int(11),
+    `net5` int(11), 
+    `profit5` int(11),
+    `Totalnet` int(11),
+    `totalProfits` int(11),
+  
+    PRIMARY KEY (Bill_Code)   
+);
+-----------------------------------------------------------------------------------------
+CREATE TABLE drugs(  
+  `Barcode` varchar(11),
+    `Name` varchar(100), 
+    `Type` varchar(100), 
+    `Purchasing_Price` int(11), 
+    `Selling_price` int(11),
+    `Discount` int(11),
+    `Quantity`int(11),
+    `Profit`int(11),
+    `Company` varchar(100),
+  
+  
+    PRIMARY KEY (Name)   
+);
+----------------------------------------------------------------------------------------
+
+CREATE TABLE lost_drugs(  
+  `Drug_Name` varchar(100),
+    `Drug_Type` varchar(100), 
+    
+    `Quantity_Drug` int(11),
+    
+  
+  
+    PRIMARY KEY (Drug_Name)   
+);
+-------------------------------------------------------------------------------------
+CREATE TABLE purchases_bills( 
+  Billcode int(11),
+  `Barcode` varchar(100),
+    `Name` varchar(100), 
+    `Type` varchar(100),
+     `Purchasing_Price` int(11),
+    `Selling_price` int(11),
+    `Discount`int(11),
+    `Quantity`int(11),
+    `total`int(11),
+    `Company`varchar(100),
+    `DateBill` date,
+    
+  
+  
+    PRIMARY KEY (Billcode)   
+);
+----------------------------------------------------------------------------------
+CREATE TABLE sales_bills(  
+  `Bill_Code` int(11),
+    `Bill_Date`date,
+    `Drug1` varchar(100),
+    `unit_price1` int(11),
+    `Quantity1` int(11),
+    `total1` int(11), 
+    `discount1` int(11),
+    `net1` int(11), 
+    `profit1` int(11),
+    `Drug2` varchar(100),
+    `unit_price2` int(11),
+    `Quantity2` int(11), 
+    `total2`  int(11),
+    `discount2` int(11),
+    `net2` int(11), 
+    `profit2`int(11),
+    `Drug3`varchar(100), 
+    `unit_price3`int(11),
+    `Quantity3`int(11), 
+    `total3`int(11), 
+    `discount3`int(11),
+    `net3`int(11), 
+    `profit3`int(11), 
+    `Drug4` varchar(100),
+    `unit_price4`int(11),
+    `Quantity4`int(11),
+    `total4` int(11),
+    `discount4` int(11), 
+    `net4` int(11),
+    `profit4` int(11),
+    `Drug5` varchar(100),
+    `unit_price5`int(11), 
+    `Quantity5` int(11), 
+    `total5` int(11),
+    `discount5` int(11),
+    `net5` int(11), 
+    `profit5` int(11),
+    `Totalnet` int(11),
+    `totalProfits` int(11),
+  
+    PRIMARY KEY (Bill_Code)   
+);
+-----------------------------------------------------------------------------
+CREATE TABLE screens (
+seq  int(11) PRIMARY KEY,
+    Name varchar(45),
+    page varchar(45),
+  
+   CONSTRAINT fk_admin FOREIGN KEY (Name)  
+  REFERENCES admin(name)  
+);

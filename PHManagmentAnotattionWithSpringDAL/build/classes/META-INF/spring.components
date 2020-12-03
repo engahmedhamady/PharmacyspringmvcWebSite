@@ -1,0 +1,21 @@
+#
+#Mon Sep 21 20:57:29 EET 2020
+com.store.dal.repos.SalesBillsDAO=org.springframework.stereotype.Component
+com.store.dal.entities.Admin=javax.persistence.Entity,javax.persistence.Table
+com.store.dal.repos.LostDrugsDAO=org.springframework.stereotype.Component
+com.store.dal.repos.BillCodeStoreDAO=org.springframework.stereotype.Component
+com.store.dal.entities.BillCodeStore=javax.persistence.Entity,javax.persistence.Table
+com.store.dal.repos.DrugsDAO=org.springframework.stereotype.Component
+com.store.dal.repos.BaseDAO=org.springframework.stereotype.Component
+com.store.dal.entities.LostDrugs=javax.persistence.Entity,javax.persistence.Table
+com.store.dal.repos.PurchasesBillsDAO=org.springframework.stereotype.Component
+com.store.dal.repos.ScreensDAO=org.springframework.stereotype.Component
+com.store.dal.entities.Drugs=javax.persistence.Entity,javax.persistence.Table
+com.store.dal.repos.AdminDAO=org.springframework.stereotype.Component
+com.store.dal.entities.Screens=javax.persistence.Entity,javax.persistence.Table
+com.store.dal.entities.PurchasesBills=javax.persistence.Entity,javax.persistence.Table
+com.store.dal.entities.DeliveryBills=javax.persistence.Entity,javax.persistence.Table
+com.store.dal.entities.SalesBills=javax.persistence.Entity,javax.persistence.Table
+com.store.dal.repos.DeliveryBillsDAO=org.springframework.stereotype.Component
+com.store.dal.repos.CustomerDAO=org.springframework.stereotype.Component
+com.store.dal.entities.Customer=javax.persistence.Entity,javax.persistence.Table

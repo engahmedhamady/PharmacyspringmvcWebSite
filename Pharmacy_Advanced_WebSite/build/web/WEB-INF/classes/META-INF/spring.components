@@ -1,0 +1,11 @@
+#
+#Mon Nov 09 00:50:09 EET 2020
+com.store.presn.controllers.SettingOperationsController=org.springframework.stereotype.Component
+com.store.presn.controllers.CustomerOperationsController=org.springframework.stereotype.Component
+com.store.presn.controllers.SearchOperationsController=org.springframework.stereotype.Component
+com.store.presn.controllers.ReportsOperationsController=org.springframework.stereotype.Component
+com.store.presn.controllers.PurchasesOperationsController=org.springframework.stereotype.Component
+com.store.presn.controllers.DiscountOperationsController=org.springframework.stereotype.Component
+com.store.presn.controllers.MenuController=org.springframework.stereotype.Component
+com.store.presn.controllers.AppController=org.springframework.stereotype.Component
+com.store.presn.controllers.OperationsController=org.springframework.stereotype.Component

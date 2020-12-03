@@ -1,0 +1,19 @@
+#
+#Wed Nov 25 08:02:24 EET 2020
+com.store.bll.transformers.CustomerTransformer=org.springframework.stereotype.Component
+com.store.bll.impl.SearchManagerImpl=org.springframework.stereotype.Component
+com.store.bll.transformers.SalesBillsTransformer=org.springframework.stereotype.Component
+com.store.bll.impl.DiscountManagerImpl=org.springframework.stereotype.Component
+com.store.bll.transformers.DeliveryBillsTransformer=org.springframework.stereotype.Component
+com.store.bll.transformers.PurchasesBillsTransformer=org.springframework.stereotype.Component
+com.store.bll.transformers.AdminTransformer=org.springframework.stereotype.Component
+com.store.bll.delegate.StoreGetWay=org.springframework.stereotype.Component
+com.store.bll.impl.LogManagerImpl=org.springframework.stereotype.Component
+com.store.bll.transformers.LostDrugsTransformer=org.springframework.stereotype.Component
+com.store.bll.transformers.ScreensTransformer=org.springframework.stereotype.Component
+com.store.bll.impl.SalesManagerImpl=org.springframework.stereotype.Component
+com.store.bll.transformers.BillCodeStoreTransformer=org.springframework.stereotype.Component
+com.store.bll.impl.SettingManagerImpl=org.springframework.stereotype.Component
+com.store.bll.impl.ReportsManagerImpl=org.springframework.stereotype.Component
+com.store.bll.impl.PurchasesManagerImpl=org.springframework.stereotype.Component
+com.store.bll.transformers.DrugsTransformer=org.springframework.stereotype.Component
